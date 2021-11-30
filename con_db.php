@@ -8,4 +8,10 @@
    // Create connection
    $con = mysqli_connect($dbhost, $dbuser, $dbpass,$db);
 
+// Check connection
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
 ?>
