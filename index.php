@@ -1,17 +1,16 @@
-<?php
-
-    $dbhost = "20.185.216.150";
-    $dbuser = "usercloud1";
-    $dbpass = "usercloud1";
-    $db = "info";
-   
-   // Create connection
-   $con = mysqli_connect($dbhost, $dbuser, $dbpass,$db);
-
-// Check connection
-if (!$con) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-echo "Connected successfully";
-
-?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrar usuario</title>
+	<meta charset="utf-8">
+</head>
+<body>
+    <form method="post">
+    	<input type="text" name="name" placeholder="Telefono">
+    	<input type="submit" name="register">
+    </form>
+        <?php 
+        include("registrar.php");
+        ?>
+</body>
+</html>
