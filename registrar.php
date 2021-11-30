@@ -3,9 +3,9 @@
 include("con_db.php");
 
 if (isset($_POST['Guardar'])) {
-    if (strlen($_POST['name']) >= 1) {
-	    $name = trim($_POST['name']);
-	    $consulta = "INSERT INTO telefono VALUES ('$name')";
+    if (strlen($_POST['num']) >= 1) {
+	    $name = trim($_POST['num']);
+	    $consulta = "INSERT INTO telefono VALUES ('$num')";
 	    $resultado = mysqli_query($con,$consulta);
 	    if ($resultado) {
 	    	?> 
