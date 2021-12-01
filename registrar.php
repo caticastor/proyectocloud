@@ -2,10 +2,10 @@
 
 include("con_db.php");
 
-if (isset($_POST['Guardar'])) {
+if (isset($_POST['guardar'])) {
     if (strlen($_POST['num']) >= 1) {
 	    $name = trim($_POST['num']);
-	    $consulta = "INSERT INTO telefono VALUES ('$num')";
+	    $consulta = "INSERT INTO telefono VALUES ('$name')";
 	    $resultado = mysqli_query($con,$consulta);
 	    if ($resultado) {
 	    	?> 
