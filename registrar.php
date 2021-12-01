@@ -9,16 +9,16 @@ if (isset($_POST['Guardar'])) {
 	    $resultado = mysqli_query($con,$consulta);
 	    if ($resultado) {
 	    	?> 
-	    	<h3>Número de teléfono guardado</h3>
+		<center><h3>Número de teléfono guardado</h3></center>
            <?php
 	    } else {
 	    	?> 
-	    	<h3>Se produjo un error, intente de nuevo</h3>
+		<center><h3>Se produjo un error, intente de nuevo</h3></center>
            <?php
 	    }
     }   else {
 	    	?> 
-	    	<h3>El campo no puede estar vacío</h3>
+		<center><h3>El campo no puede estar vacío</h3></center>
            <?php
     }
 }
