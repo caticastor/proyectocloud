@@ -9,7 +9,7 @@
     <center>
 	<form method="post">
     	<input type="text" name="num" placeholder="Teléfono">
-		<input type="submit" name="Guardar"></center>
+		<input type="submit" name="guardar"></center>
     </form>
         <?php 
         include("registrar.php");
